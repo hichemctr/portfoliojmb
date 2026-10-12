@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <link rel="icon" href="tete.jpg">
+    <!-- Framework W3.CSS -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Fichier CSS personnel -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRE DE NAVIGATION -->
+    <div class="w3-top">
+        <div class="w3-bar navbar w3-card">
+            <div class="nav-links">
+                <a href="#accueil" class="w3-bar-item w3-button">Accueil</a>
+                <a href="#projets" class="w3-bar-item w3-button">Projets</a>
+                <a href="#competences" class="w3-bar-item w3-button">Compétences</a>
+                <a href="https://github.com/hichemctr"  id="github"     class="w3-bar-item w3-button ">Mon github</a>
+            </div>
+            <a href="#contact" class="w3-bar-item w3-button bg-cyan w3-round btn-contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- SECTION ACCUEIL -->
+    <header id="accueil" class="w3-container w3-center section-haute">
+        <h1 class="w3-jumbo w3-margin-bottom">Bonjour, je suis <span class="text-cyan">Chentir Hicham</span></h1>
+        <p class="w3-xxlarge text-cyan">Étudiant au lycée Jean Moulin</p>
+        <p class="w3-xlarge w3-text-light-grey" style="max-width:1000px; margin:20px auto;">
+            Bienvenue sur mon portfolio personnel. Découvrez mes réalisations techniques, mes expériences professionnelles ainsi que mes compétences.
+        </p>
+        <div class="w3-margin-top" style="padding-top:30px;">
+            <a href="#projets" class="w3-button bg-cyan w3-round w3-padding-large w3-large w3-margin">Voir mes projets</a>
+            <a href="#contact" class="w3-button w3-black w3-round w3-padding-large w3-large w3-margin" style="border: 1px solid white;">Me contacter</a>
+        </div>
+    </header>
+
+    <!-- SECTION PROJETS -->
+    <div id="projets" class="w3-container section-haute">
+        <div class="mon-conteneur-large">
+            <h2 class="w3-center w3-border-bottom w3-border-cyan w3-padding-24 w3-xxlarge">Mes Projets & Expériences</h2>
+            <p class="w3-center w3-large w3-margin-bottom">Une présentation détaillée de mon parcours et de mes créations :</p>
+            
+            <div style="margin-top:50px">
+                
+                <!-- Projet 1 : Stage en Supérette -->
+                <div class="project-card">
+                    <div class="project-layout">
+                        <div class="project-text">
+                            <h3 class="w3-xlarge text-cyan">Stage en Supérette</h3>
+                            <p class="w3-small w3-text-grey">Expérience Professionnelle</p>
+                            <p class="w3-margin-top">Immersion pratique en milieu commercial : gestion informatisée des stocks, organisation des rayons, relation client et tenue de la caisse.</p>
+                        </div>
+                        <div class="project-image-container">
+                            <img src="stage.webp" alt="Stage en Supérette">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 2 : Sonomètre Scolaire -->
+                <div class="project-card">
+                    <div class="project-layout">
+                        <div class="project-text">
+                            <h3 class="w3-xlarge text-cyan">Sonomètre Scolaire</h3>
+                            <p class="w3-small w3-text-grey">Projet de Première</p>
+                            <p class="w3-margin-top">Conception complète d'un boîtier de mesure du niveau sonore afin de prévenir les nuisances et réguler le niveau de bruit en classe.</p>
+                        </div>
+                        <div class="project-image-container">
+                            <img src="sono.jpg" alt="Sonomètre Scolaire">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Projet 3 : Amplificateur Naturel -->
+                <div class="project-card">
+                    <div class="project-layout">
+                        <div class="project-text">
+                            <h3 class="w3-xlarge text-cyan">Amplificateur Naturel</h3>
+                            <p class="w3-small w3-text-grey">Projet de Première</p>
+                            <p class="w3-margin-top">Étude acoustique et fabrication d'un amplificateur sonore passif optimisé, sans aucun composant électronique ni consommation d'énergie.</p>
+                        </div>
+                        <div class="project-image-container">
+                            <img src="ampli.jpg" alt="Amplificateur de son naturel" >
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION COMPETENCES -->
+    <div id="competences" class="w3-container section-haute">
+        <div class="mon-conteneur-large">
+            <h2 class="w3-center w3-border-bottom w3-border-cyan w3-padding-24 w3-xxlarge">Compétences Techniques</h2>
+            <p class="w3-center w3-large w3-margin-bottom">Aperçu de mes connaissances en développement et outils :</p>
+            
+            <div class="w3-row-padding" style="margin-top:40px;">
+                <div class="w3-col m6 w3-padding-16">
+                    <p class="w3-large">HTML5 / CSS3 (80%)</p>
+                    <div class="w3-dark-grey w3-round" style="height:30px;"><div class="w3-container bg-cyan w3-round" style="width:80%; height:30px;"></div></div>
+                    
+                    <p class="w3-large w3-margin-top">W3.CSS (70%)</p>
+                    <div class="w3-dark-grey w3-round" style="height:30px;"><div class="w3-container bg-cyan w3-round" style="width:70%; height:30px;"></div></div>
+
+                     <p class="w3-large w3-margin-top">Arduino (50%)</p>
+                    <div class="w3-dark-grey w3-round" style="height:30px;"><div class="w3-container bg-cyan w3-round" style="width:50%; height:30px;"></div></div>
+                </div>
+                <div class="w3-col m6 w3-padding-16">
+                    <p class="w3-large">Git / GitHub (50%)</p>
+                    <div class="w3-dark-grey w3-round" style="height:30px;"><div class="w3-container bg-cyan w3-round" style="width:50%; height:30px;"></div></div>
+                    
+                    <p class="w3-large w3-margin-top">VS Code & Environnement (80%)</p>
+                    <div class="w3-dark-grey w3-round" style="height:30px;"><div class="w3-container bg-cyan w3-round" style="width:80%; height:30px;"></div></div>
+               
+                 <p class="w3-large w3-margin-top">Javascript (15%)</p>
+                    <div class="w3-dark-grey w3-round" style="height:30px;"><div class="w3-container bg-cyan w3-round" style="width:15%; height:30px;"></div></div>
+               
+                </div>
+               
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="contact" class="w3-container section-haute">
+        <div class="mon-conteneur-formulaire">
+            <h2 class="w3-center w3-border-bottom w3-border-cyan w3-padding-24 w3-xxlarge">Contactez-moi</h2>
+            <p class="w3-center w3-large w3-margin-bottom">N'hésitez pas à me laisser un message via ce formulaire :</p>
+            
+            <form action="https://formspree.io/f/xvkzplaq" method="POST" class="project-card" style="margin-top:20px;">
+                <div class="w3-section">
+                    <label class="w3-large">Nom complet</label>
+                    <input class="w3-input w3-border w3-dark-grey w3-padding-16" type="text" name="Nom" required>
+                </div>
+                <div class="w3-section">
+                    <label class="w3-large">Adresse Email</label>
+                    <input class="w3-input w3-border w3-dark-grey w3-padding-16" type="email" name="email" required>
+                </div>
+                <div class="w3-section">
+                    <label class="w3-large">Votre Message</label>
+                    <textarea class="w3-input w3-border w3-dark-grey w3-padding-16" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="w3-button bg-cyan w3-block w3-padding-large w3-large w3-section">Envoyer le message</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="w3-container navbar w3-center w3-padding-32" style="justify-content: center;">
+        <p class="w3-large">&copy; 2026 - Chentir Hicham | Réalisé avec W3.CSS</p>
+    </footer>
+
+</body>
+</html>

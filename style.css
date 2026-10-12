@@ -1,0 +1,144 @@
+/* 1. Style général et police */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    color: white;
+}
+
+/* 2. Image de fond fixe, floutée et assombrie */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('landscape.jpg');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -2;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+/* 3. Navigation en haut (Fixe, Accueil/Projets/Compétences à gauche, Contact à droite) */
+.navbar {
+    background-color: rgba(20, 20, 30, 0.95) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 15px ;
+    width: 100%;
+}
+#github {
+    color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow-x: auto;
+    white-space: nowrap;
+    flex-grow: 1;
+}
+
+.btn-contact {
+    flex-shrink: 0;
+    margin-left: auto;
+}
+
+/* 4. Sections hautes et larges */
+.section-haute {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 100px 5% ;
+}
+
+/* 5. Conteneurs larges personnalisés */
+.mon-conteneur-large {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.mon-conteneur-formulaire {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 0 15px;
+    box-sizing: border-box; /* Empêche les éléments de dépasser des bords de l'écran */
+}
+
+/* 6. Cartes de projets */
+.project-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgba(30, 30, 45, 0.85);
+    padding: 35px;
+    border-radius: 8px;
+    border: 1px solid #00adb5;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* 7. Organisation interne : Texte à gauche, Image à droite (S'adapte sur mobile) */
+.project-layout {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.project-text {
+    flex: 1;
+}
+
+.project-image-container {
+    flex: 1;
+    text-align: center;
+    border-radius: 12px;
+    /* Force l'arrondi de l'image de manière propre */
+}
+
+.project-image-container img {
+    width: 100%;
+    max-height: 380px;
+    object-fit: contain;
+    border-radius: 12px;
+    display: block;
+}
+
+/* Adaptation Responsive pour les téléphones portables */
+@media (max-width: 768px) {
+    .project-layout {
+        flex-direction: column;
+    }
+    
+    .navbar {
+        padding: 5px 10px ;
+    }
+    
+    .navbar a {
+        font-size: 13px ;
+        padding: 6px 8px ;
+    }
+}
+
+/* 8. Couleurs personnalisées */
+.text-cyan { color: #00adb5; }
+.bg-cyan { background-color: #00adb5; color: white; }
